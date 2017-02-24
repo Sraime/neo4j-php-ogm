@@ -66,7 +66,7 @@ class RelationshipsFinder
                 $pattern = '-[%s:%s]->';
                 break;
             case 'BOTH':
-                $pattern = '-[%s:%s]->';
+                $pattern = '-[%s:%s]-';
                 break;
             default:
                 throw new \LogicException(sprintf('Unsupported relationship direction "%s"', $direction));
